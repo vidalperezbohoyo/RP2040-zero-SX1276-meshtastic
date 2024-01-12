@@ -56,6 +56,10 @@ As soon as the copy ends, the board will reboot with the firmware installed. The
 
 
 # Other usefull stuff
-### The 3D printed case for this LoRa module
-Here is the [link](https://www.thingiverse.com/thing:6429173)  
+### The 3D printed case for this LoRa module  
+Here is the Thingiverse [link](https://www.thingiverse.com/thing:6429173).  
+
+<img src="https://github.com/vidalperezbohoyo/RP2040-zero-SX1276-meshtastic/blob/main/doc/case.jpg" alt="Case" height="300">  
+
+
 
