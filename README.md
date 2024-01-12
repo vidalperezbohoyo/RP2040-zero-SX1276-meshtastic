@@ -23,6 +23,8 @@ This repo contains the hardware and software development of a fixed node based o
 | VDD                     | 3.3v       |   |                      |      |
 | GND (any)               | GND        |   |                      |      |
 
+> **Note:**
+> Some boards as the TTGO Lora32 uses a 22 Ohm resistor between DIO0/DIO1 and their respective GPIOs. (Without this resistors works but if TTGO puts here...).
 # Firmware
 You can use one of the precompiled firmware located into the **firmware** folder of this repo. With the method *Drag and Drop* shown 
 [here](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop).
@@ -31,7 +33,7 @@ You can use one of the precompiled firmware located into the **firmware** folder
 But if you want to build your own version, follow the steps below. ⬇️
 
 As the same module used in the firmware precompiled by Meshtastic (rpico) is not this one (SX126X != SX127X), it is necessary to generate the binary ourselves. To do this, we must follow the steps outlined in this [guide](https://meshtastic.org/docs/development/firmware/build) (it's not difficult but it takes some time).  
-Additionally, we need to add the following [folder](path) to the **variants** directory and modify the main **platform.ini** of the proyect as shown:  
+Additionally, we need to add the following [folder](https://github.com/vidalperezbohoyo/RP2040-zero-SX1276-meshtastic/tree/main/variants/rp2040-zero) to the **variants** directory and modify the main **platform.ini** of the proyect as shown:  
 ```
 ; PlatformIO Project Configuration File
 ; https://docs.platformio.org/page/projectconf.html
