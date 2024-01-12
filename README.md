@@ -8,7 +8,7 @@ This repo contains the hardware and software development of a fixed node based o
 - SSD1306 or similar I2C Oled screen compatible with Meshtastic.
  
 # Wiring
-![](https://github.com/vidalperezbohoyo/RP2040-zero-SX1276-meshtastic/blob/main/doc/diagram.png)
+<img src="https://github.com/vidalperezbohoyo/RP2040-zero-SX1276-meshtastic/blob/main/doc/diagram.png" alt="Wiring" height="200">  
 
 | SX127X                  | GPIO       |   | SSD1306 (or similar) | GPIO |
 |-------------------------|------------|---|----------------------|------|
@@ -24,8 +24,12 @@ This repo contains the hardware and software development of a fixed node based o
 | GND (any)               | GND        |   |                      |      |
 
 # Firmware
-As the same module used in the firmware precompiled by Meshtastic (rpico) is not this (SX126X != SX127X), it is necessary to generate the binary ourselves. To do this, we must follow the steps outlined in this guide (it's not difficult but it takes some time). Additionally, we need to add the following folder to the **variants** directory and modify the **platform.ini** file as shown:
+You can use one of the precompiled firmware located into the **firmware** folder of this repo. With the method *Drag and Drop* shown 
+[here](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop).
 
+## Build your own firmware
+But if you want to build your own version, follow the steps below.  
+As the same module used in the firmware precompiled by Meshtastic (rpico) is not this (SX126X != SX127X), it is necessary to generate the binary ourselves. To do this, we must follow the steps outlined in this guide (it's not difficult but it takes some time). Additionally, we need to add the following folder to the **variants** directory and modify the **platform.ini** file as shown:
 
 For compile, Ctrl + Shift + B or Ctrl + Shift + P. If all is SUCCESS, you have to upload it to the board .I get failure every time in middle of the upload with the Upload button. To solve this, Hold BOOT button of the RP2040-Zero and then connect to the PC, then copy in the folder that appears (like USB stick) the **firmware.uf2** located in the folder (inside the cloned repo): **.pio/build/rp2040-zero/**
 
