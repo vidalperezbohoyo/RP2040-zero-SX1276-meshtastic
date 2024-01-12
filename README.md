@@ -28,9 +28,10 @@ You can use one of the precompiled firmware located into the **firmware** folder
 [here](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop).
 
 ## Build your own firmware
-But if you want to build your own version, follow the steps below.  
-As the same module used in the firmware precompiled by Meshtastic (rpico) is not this (SX126X != SX127X), it is necessary to generate the binary ourselves. To do this, we must follow the steps outlined in this guide (it's not difficult but it takes some time).  
-Additionally, we need to add the following folder to the **variants** directory and modify the main **platform.ini** of the proyect as shown:  
+But if you want to build your own version, follow the steps below. ⬇️
+
+As the same module used in the firmware precompiled by Meshtastic (rpico) is not this one (SX126X != SX127X), it is necessary to generate the binary ourselves. To do this, we must follow the steps outlined in this [guide](https://meshtastic.org/docs/development/firmware/build) (it's not difficult but it takes some time).  
+Additionally, we need to add the following [folder](path) to the **variants** directory and modify the main **platform.ini** of the proyect as shown:  
 ```
 ; PlatformIO Project Configuration File
 ; https://docs.platformio.org/page/projectconf.html
