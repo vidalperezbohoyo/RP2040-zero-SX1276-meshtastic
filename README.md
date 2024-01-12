@@ -24,7 +24,7 @@ This repo contains the hardware and software development of a fixed node based o
 | GND (any)               | GND        |   |                      |      |
 
 > **Note:**
-> Some boards as the TTGO Lora32 uses a 22 Ohm resistor between DIO0/DIO1 and their respective GPIOs. (Without this resistors works but if TTGO puts here...).
+> Some boards as the TTGO Lora32 uses a 22 Ohm resistor between DIO0/DIO1 and their respective GPIOs. (Without this resistors works but if TTGO puts here, may be for a reason).
 # Firmware
 You can use one of the precompiled firmware located into the **firmware** folder of this repo. With the method *Drag and Drop* shown 
 [here](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop).
