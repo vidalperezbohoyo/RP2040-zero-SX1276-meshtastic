@@ -10,7 +10,8 @@ This repo contains the hardware and software development of a fixed node based o
  
 You can see the schematic here.
 
-
+# Wiring
+![](https://github.com/vidalperezbohoyo/RP2040-zero-SX1276-meshtastic/blob/main/doc/diagram.png)
 
 # Firmware
 The firmware is not the prebuilt for the pico because the LoRa module is different. Only is needed to change the **variant** file to this.  
