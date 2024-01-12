@@ -53,3 +53,9 @@ For compile, **Ctrl + Shift + B** or **Ctrl + Shift + P**. If all is SUCCESS, yo
 I get failure every time in middle of the upload with the **Upload** button. To solve this, hold **BOOT** button of the RP2040-Zero and then connect to the PC, then copy in the folder that appears (like USB stick) the **firmware.uf2** located in the meshtastic firmware repo folder: **.pio/build/rp2040-zero/** (This appears when compilation was OK).
 
 As soon as the copy ends, the board will reboot with the firmware installed. Then configure the region and check that there are no errors on the screen (or crash after 34 seconds if the radio is misconnected).
+
+
+# Other usefull stuff
+### The 3D printed case for this LoRa module
+Here is the [link](https://www.thingiverse.com/thing:6429173)  
+
